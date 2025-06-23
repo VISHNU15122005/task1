@@ -1,0 +1,144 @@
+/* Reset and base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color:linear-gradient(to right, #e3f2fd, #fce4ec);
+    color: #212121;
+    line-height: 1.6;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  /* Header */
+  header {
+    background-color: #1a237e;
+    color: white;
+    padding: 1.5em 0;
+  }
+  
+  .logo {
+    float: left;
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  nav {
+    float: right;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2em;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #03a9f4;
+  }
+  
+  /* Clear floats */
+  header::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #e3f2fd;
+    text-align: center;
+    padding: 5em 1em;
+  }
+  
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #1a237e;
+  }
+  
+  .hero p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    margin-top: 2em;
+    padding: 0.8em 2em;
+    background-color: #03a9f4;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0288d1;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #0d47a1;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    margin-top: 3em;
+  }
+  
+  footer p {
+    margin-bottom: 1em;
+  }
+  
+  .social-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1em;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .social-links a:hover {
+    color: #03a9f4;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav {
+      float: none;
+      text-align: center;
+      margin-top: 1em;
+    }
+  
+    .nav-links {
+      flex-direction: column;
+      gap: 1em;
+    }
+  
+    .logo {
+      float: none;
+      text-align: center;
+    }
+  
+    header::after {
+      content: none;
+    }
+  }
+  
